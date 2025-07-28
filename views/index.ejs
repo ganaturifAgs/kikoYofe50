@@ -1,0 +1,51 @@
+<%- include('templates/cabeza',{title:title,headerTitle:"Nuestra Boda de Oro"}) %>
+<%- include('templates/audioplayer') %>
+<div class="sonido"><i id="suena" class="fas fa-volume-high fa-2x"></i></div>
+<div class="content">
+    <div class="intro"> <strong id="invitado"><%= invitado %></strong> <br>Invitación a<br><span style="font-size: 50px;">Nuestra Boda de Oro</span><div class="btn-entrar">ACCESO</div></div>
+    
+    <div id="marco">    
+        <div class="nombres"> Francisco</div> <div class="nombres y"> y </div> <div class="nombres">Ofelia </div>
+                
+        <div id="verbo"> "Cincuenta años de matrimonio son un logro increíble, un testimonio del amor y la dedicación que han sostenido 
+            a lo largo de los años. Nos gustaría que se unan a nosotros para celebrar este momento especial y compartir la
+            alegría y el amor que han construido juntos."</div>      
+        <div class="fecha"> <div class="dia">SÁBADO</div>    <div class="num">16</div>            <div class="mes">AGOSTO</div>        </div>
+        
+
+        <div class="titulo">Ubicaciones</div>
+        <div class="ubi templo">
+            <div class="subtitle">MISA</div>
+            <i class="fa-solid fa-church fa-7x"></i>
+            <div class="enlinea texto">
+                <div class="ubicacion" id="templo">Parroquia de Santa Teresita del niño Jesús. Colonia Emiliano Zapata</div>
+                <div class="hora">14:00 hrs</div>
+                <div class="iconoUbi"><div id="icon1"><i class="fas fa-location-dot fa-3x fa-bounce"></i></div>como llegar</div>
+            </div>   
+        </div>
+
+        <div class="ubi finca">   
+            <div class="subtitle">RECEPCIÓN</div>
+            <i class="fa-solid fa-champagne-glasses fa-7x"></i>
+            <div class="enlinea texto">
+                <div class="ubicacion" id="finca">Finca san Joaquin. Catarino Herrera 208-B. Colonia J. Guadalupe Rodriguez</div>
+                <div class="hora">16:00 hrs</div>
+                <div class="iconoUbi"><div id="icon2"><i class="fas fa-map-pin fa-3x fa-bounce"></i></div>como llegar </div>
+            </div>
+        </div>
+
+<div class="titulo">Felicitalos</div>
+<div class="mensaje">
+    <div id="textoEditable" contenteditable="true" >Escriba aqui su mensaje</div>
+</div>
+<div id="contador">Quedan:<span id="quedan">200</span> caracteres</div>
+            <div id="enviar">Enviar</div>
+                <p class="teEsperamos">
+                    ¡Esperamos contar con tu presencia para compartir este día tan especial!
+                </p>
+            <div class="subtitle btn-confirmar">
+                <div>Confirmar Asitencia</div>
+            </div>
+    </div>
+</div>
+<%- include('templates/pies',{corp:'Xino-Corp'}) %>
